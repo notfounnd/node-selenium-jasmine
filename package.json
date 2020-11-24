@@ -1,0 +1,29 @@
+{
+  "name": "qa-plataforma-junto-jasmine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx babel-node jasmine/run.js",
+    "test_chrome": "cp ./src/environments/.env_chrome .env && npx babel-node spec/run.js",
+    "test_firefox": "cp ./src/environments/.env_firefox .env && npx babel-node spec/run.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.7",
+    "@babel/core": "^7.12.7",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.7",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "chromedriver": "^87.0.0",
+    "dotenv": "^8.2.0",
+    "jasmine": "^3.6.3",
+    "jasmine-markdown-reporter": "^1.0.0",
+    "jasmine-pretty-html-reporter": "^0.2.5",
+    "jasmine-spec-reporter": "^6.0.0",
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  }
+}
