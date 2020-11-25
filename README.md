@@ -30,9 +30,10 @@ yarn test --headed
 ```
 
 Para executar um teste com alguma descrição específica utilize o parâmetro `--filter`. Este recurso foi implementado visando a utilização de tags para uma execução customizada. Por limitações do Jasmine, o parâmetro aceita apenas uma tag por execução.
+
 ***Observação:*** _No exemplo apresentado neste repositório foi utilizado o caracter # para realizar a marcação do teste alvo, porém isso não é uma obrigatoriedade._
 ```
-yarn test --filter=#tag
+yarn test --filter=#tag1
 ```
 
 ### Relatórios de execução dos testes
