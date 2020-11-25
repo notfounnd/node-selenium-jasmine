@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx babel-node jasmine/run.js",
-    "test_chrome": "cp ./src/environments/.env_chrome .env && npx babel-node spec/run.js",
-    "test_firefox": "cp ./src/environments/.env_firefox .env && npx babel-node spec/run.js"
+    "test_filter": "npx babel-node jasmine/run.js --filter=#tag1"
+    "test_env_qa": "cp ./src/environments/.env_qa .env && npx babel-node spec/run.js",
   },
   "author": "",
   "license": "ISC",

@@ -6,6 +6,19 @@ const MarkdownReporter = require('jasmine-markdown-reporter')
 const JasmineConsoleReporter = require('jasmine-console-reporter')
 const jasmine = new Jasmine()
 
+let filter = ''
+
+process.argv.forEach((value) => {
+  try {
+    if (value.includes('filter')) {
+      filter = value.split('=')
+      filter = filter[1]
+    }
+  } catch (error) {
+    console.log(error)
+  }
+})
+
 jasmine.loadConfigFile('jasmine/support/jasmine.json')
 
 jasmine.addReporter(
@@ -35,14 +48,5 @@ jasmine.addReporter(
     destination: 'jasmine/report/spec.md'
   })
 )
-
-// const SpecReporter = require('jasmine-spec-reporter').SpecReporter
-// jasmine.addReporter(
-//   new SpecReporter({
-//     spec: {
-//       displayPending: true
-//     }
-//   })
-// )
 
 jasmine.execute()
