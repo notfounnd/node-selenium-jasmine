@@ -4,9 +4,9 @@ Projeto exemplo de automação de testes E2E desenvolvido com NodeJS + Selenium 
 ### Pré-requisitos
 Para utilização é necessário possuir em sua estação de trabalho:
 
-> Node.js
-> Google Chrome (Versão 87)
-> Yarn (Recomendado)
+* Node.js
+* Google Chrome (Versão 87)
+* Yarn (Recomendado)
 
 ### Iniciando o ambiente do projeto
 1. Realize o donwload/clone do repositório em sua estação de trabalho.
