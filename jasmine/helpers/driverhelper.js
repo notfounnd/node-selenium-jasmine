@@ -44,6 +44,7 @@ class DriverHelper {
     browserOptions.addArguments('disable-gpu')
     browserOptions.addArguments('disable-dev-shm-usage')
     browserOptions.addArguments('log-level=3')
+	browserOptions.addArguments('incognito')
     browserOptions.setUserPreferences({ credential_enable_service: false })
     return browserOptions
   }
