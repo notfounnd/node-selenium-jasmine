@@ -13,7 +13,7 @@ Para utilização é necessário possuir em sua estação de trabalho:
 2. Abra o terminal de comandos na raiz (pasta com o arquivo package.json) do diretório que você clonou o projeto.
 3. Realiza a instalação dos pacotes e dependências através do seguinte comando:
 ```
-npm install
+yarn install
 ```
 
 ### Executando os testes do projeto
